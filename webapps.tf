@@ -22,7 +22,7 @@ resource "azurerm_app_service_plan" "free" {
     kind                = "Linux"
     sku {
         tier = "Free"
-        size = "S1"
+        size = "F1"
     }
 }
 
