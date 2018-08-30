@@ -36,6 +36,6 @@ resource "azurerm_app_service" "citadel" {
     app_service_plan_id = "${element(azurerm_app_service_plan.free.*.id, count.index)}"
 }
 
-output "webappids" {
+output "webapp_ids" {
   value = "${azurerm_app_service.citadel.*.id}"
 }
